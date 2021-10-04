@@ -10,12 +10,17 @@ job('Python Example'){
       scm('H/5 * * * *')
    }
 
+   // Adds pre/post actions to the job
    wrappers{
-      nodejs('node.js')
+      colorizeOutput()
+
+      python{
+         pythonName('python36')
+      }
    }
 
    steps{
-      shell('npm install')
+      shell('python --version')
    }
 
 }
