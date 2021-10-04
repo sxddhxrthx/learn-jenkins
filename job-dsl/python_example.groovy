@@ -1,4 +1,4 @@
-job('Python Example'){
+job('Python-Job-through-DSL'){
    scm {
       github('sxddhxrthx/python-app-jenkins-demo')
    }
