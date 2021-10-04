@@ -1,14 +1,9 @@
 job('Python Example'){
    scm {
-
-      // git('git://github.com/wardviaene/docker-demo.git'){ node->
-      //    node / gitConfigName('DSL User')
-      //    node / gitConfigEmail('sid@jenkins.com')
-      // }
-      
       github('sxddhxrthx/python-app-jenkins-demo')
    }
 
+   // poll the above mentioned repository every 5 minutes
    triggers{
       scm('H/5 * * * *')
    }
@@ -19,7 +14,7 @@ job('Python Example'){
    }
 
    steps{
-      shell('python --version')
+      shell('python3 --version')
    }
 
 }
