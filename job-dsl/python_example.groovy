@@ -17,4 +17,8 @@ job('Python Example'){
       shell('python3 --version')
    }
 
+   steps{
+      shell('python3 hello-python.py')
+   }
+
 }
