@@ -13,10 +13,6 @@ job('Python Example'){
    // Adds pre/post actions to the job
    wrappers{
       colorizeOutput()
-
-      python{
-         pythonName('python36')
-      }
    }
 
    steps{
