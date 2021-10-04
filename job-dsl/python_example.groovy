@@ -1,9 +1,12 @@
 job('Python Example'){
    scm {
-      git('git://github.com/wardviaene/docker-demo.git'){ node->
-         node / gitConfigName('DSL User')
-         node / gitConfigEmail('sid@jenkins.com')
-      }
+
+      // git('git://github.com/wardviaene/docker-demo.git'){ node->
+      //    node / gitConfigName('DSL User')
+      //    node / gitConfigEmail('sid@jenkins.com')
+      // }
+      
+      github('sxddhxrthx/python-app-jenkins-demo')
    }
 
    triggers{
